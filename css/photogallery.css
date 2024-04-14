@@ -70,16 +70,62 @@ nav {
     background-color:#000000;
 }
 
-.sectioning img {
-    padding-left:30px;
-    padding-right:30px;
-    padding-bottom:15px;
-    padding-top:15px;
+nav h2 {
+    visibility:hidden;
 }
 
-.sectioning h2 {
+h2 {
     font-size:2em;
     text-align:center;
     font-weight:600;
     text-transform:uppercase;
+}
+
+p {
+    font-size:1.25em;
+}
+
+#about h2 {
+    padding-top:20px;
+}
+
+#about p {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#gallery {
+    padding-bottom:15px;
+}
+
+#gallery h2, p {
+    padding-top:30px;
+}
+
+#gallery p {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#gallery img {
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:15px;
+}
+
+#contact {
+    background-color:#000000;
+    color:#FFFFFF;
+}
+
+#contact h2 {
+    padding-top:15px;
+}
+
+#contact p {
+    padding-top:30px;
+    padding-bottom:50px;
+    /*not aligned like example, add padding left later*/
+    width:450px;
+    text-align:center;
 }
