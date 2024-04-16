@@ -23,97 +23,104 @@
         </ul>
     </nav>
     
-    <section id="about">
-        <h2>About</h2>
-        <p>Hello! 
-        I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello!<br><br> 
+            I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world.</p>
+        </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Here are some highlights of my work. The locations and year are in the caption.</p> 
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p> 
+                <figure class="bottom">
+                    <img src="images/Chile.png" alt="Chile, 2001" title="Chile, 2001">
+                    <figcaption>Chile, 2001</figcaption>
+                </figure>
 
-        <figure>
-            <figcaption>Chile, 2001</figcaption>
-            <img src="images/Chile.png" alt="">
-        </figure>
+                <figure class="top">
+                    <img src="images/Guatemala.png" alt="Guatemala, 1997" title="Guatemala, 1997">
+                    <figcaption>Guatemala, 1997</figcaption>
+                </figure>
+                
+                <figure class="bottom">
+                    <img src="images/Hawaii.png" alt="">
+                    <figcaption>Hawaii, 2010</figcaption>
+                </figure>
 
-        <figure>
-            <figcaption>Guatemala, 1997</figcaption>
-            <img src="images/Guatemala.png" alt="">
-        </figure>
-         
-        <figure>
-            <figcaption>Hawaii, 2010</figcaption>
-            <img src="images/Hawaii.png" alt="">
-        </figure>
+                <figure class="top">
+                    <img src="images/Iran.png" alt="">
+                    <figcaption>Iran, 1999</figcaption>
+                </figure>
+            
+                <figure class="top">
+                    <img src="images/Ireland.png" alt=" ">
+                    <figcaption>Ireland, 2012</figcaption>
+                </figure>
+                
+                <figure class="bottom">
+                    <img src="images/Italy.png" alt="">
+                    <figcaption>Italy, 2015</figcaption>
+                </figure>
 
-        <figure>
-            <figcaption>Iran, 1999</figcaption>
-            <img src="images/Iran.png" alt="">
-        </figure>
-       
-        <figure>
-            <figcaption>Ireland, 2012</figcaption>
-             <img src="images/Ireland.png" alt=" ">
-        </figure>
-        
-        
-        <figure>
-            <figcaption>Italy, 2015</figcaption>
-            <img src="images/Italy.png" alt="">
-        </figure>
+                <figure class="bottom">
+                    <img src="images/Moab-Desert.png" alt="">
+                    <figcaption>Moab Desert, 2020</figcaption> 
+                </figure>
 
-        <figure>
-            <figcaption>Moab Desert, 2020</figcaption>
-            <img src="images/Moab-Desert.png" alt="">
-        </figure>
+                <figure class="top">
+                    <img src="images/Rocky-Mountains.png" alt="">
+                    <figcaption>Rocky Mountains, 2009</figcaption>
+                </figure>
 
-        <figure>
-            <figcaption>Rocky Mountains, 2009</figcaption>
-            <img src="images/Rocky-Mountains.png" alt="">
-        </figure>
+                <figure class="top">
+                    <img src="images/Switzerland.png" alt="">
+                    <figcaption>Switzerland, 2014</figcaption>
+                </figure>
 
-        <figure>
-            <figcaption>Switzerland, 2014</figcaption>
-            <img src="images/Switzerland.png" alt="">
-        </figure>
+                <figure class="top">
+                    <img src="images/UK.png" alt="">
+                    <figcaption>UK, 2005</figcaption>
+                </figure>
 
-        <figure>
-            <figcaption>UK, 2005</figcaption>
-            <img src="images/UK.png" alt="">
-        </figure>
+                <figure class="top">
+                    <img src="images/USA.png" alt="">
+                    <figcaption>USA, 2021</figcaption>
+                </figure>
 
-        <figure>
-            <figcaption>USA, 2021</figcaption>
-            <img src="images/USA.png" alt="">
-        </figure>
+                <figure class="top">
+                    <img src="images/Wyoming.png" alt="">
+                    <figcaption>Wyoming, 2021</figcaption>
+                </figure>
+        </section>
 
-        <figure>
-            <figcaption>Wyoming, 2021</figcaption>
-            <img src="images/Wyoming.png" alt="">
-        </figure>
-    </section>
+        <section id="contact">
+               <h2>Contact</h2>
+            <form>            
+                <p>Please fill out this form and I’ll connect with you soon.</p>
+                <div class="info">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your full name" required>
+                </div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Please fill out this form and I’ll connect with you soon.</p>
+                <div class="info">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email address" required>
+                </div>
 
-        <!---Your contact information--->
-        <label for="name">Name (Your full name)</label>
-        <input type="text" id="name" name="name">
-        
-        <label for="email">Email (Enter your email address)</label>
-        <input type="text" id="email" name="email">
+                <div class="info">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" placeholder="What can I help you with?" required>
+                </div>
 
-        <label for="name">Message (What can I help you with?)</label>
-        <input type="text" id="name" name="name">
-
-        <button>Submit</button>
-    </section>
-
+                    <button type="submit">Submit</button>
+                </div>
+            </form>       
+        </section>
+    </main>
+    
     <footer>
-        <p>Copyright 2021 TK Photography</p>
+        <p><small>Copyright 2021 TK Photography</small></p>
     </footer>
 </body>
 </html>

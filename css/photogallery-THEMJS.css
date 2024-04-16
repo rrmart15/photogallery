@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*END OF CSS RESET CODE - BEGIN STYLES BELOW*/
+html {
+    background-color:#000000;
+}
+
+body {
+    width:485px;
+    margin:0 auto;
+    background-color:#FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding:0;
+    margin:0;
+}
+
+h1 {
+    color:#007D7B;
+    font-size:3em;
+    text-align:center;
+    font-weight:700;
+    text-transform:uppercase;
+    padding:10px;
+}
+
+nav {
+    width:100%;
+    background-color:#000000;
+}
+
+nav ul {
+    padding-left:50px;
+    padding-bottom:30px;
+}
+
+nav h2 {
+    visibility:hidden;
+}
+
+nav li {
+    display:inline-flex;
+}
+
+nav a {
+    padding-left:10px;
+    padding-right:10px;
+    width:auto;
+    background-color:#000000;
+    color:#FFFFFF;
+    text-decoration:none;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
+    font-size:1.5em;
+}
+
+nav a:hover {
+
+}
+
+nav a:focus {
+
+}
+
+[href="#top"] {
+    position:fixed;
+    bottom:0;
+    right:0;
+    border-color:red;
+    /*add white border around buttom*/
+}
+
+h2 {
+    font-size:2em;
+    text-align:center;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+p {
+    font-size:1.25em;
+}
+
+#about h2 {
+    padding-top:20px;
+}
+
+#about p {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#gallery {
+    padding-bottom:15px;
+}
+
+#gallery h2, p {
+    padding-top:30px;
+}
+
+#gallery p {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#gallery img {
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:15px;
+}
+
+#contact {
+    background-color:#000000;
+    color:#FFFFFF;
+}
+
+#contact h2 {
+    padding-top:15px;
+}
+
+#contact p {
+    padding-top:30px;
+    /*padding-bottom:50px;*/
+    /*not aligned like example, add padding left later*/
+    width:450px;
+    text-align:center;
+}
+
+form {
+    display:inline-flex;
+    flex-direction:column;
+    text-transform:uppercase;
+    width:100%;
+}
+
+.info {
+    margin-bottom:20px;
+}
+
+.info input {
+    width:350px;
+    padding:10px;
+}
+
+.info input::placeholder {
+    color:#007D7B;
+    text-transform:uppercase;
+    font-size:1.15em;
+    font-weight:bold;
+}
