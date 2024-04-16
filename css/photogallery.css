@@ -135,7 +135,7 @@ p {
 #about p {
     margin:10px;
 }
-
+/*---------------GALLERY SECTION-----------------------*/
 #gallery {
     display:grid;
     grid-template-columns:1fr;
@@ -168,7 +168,7 @@ p {
     position:absolute;
     margin: -270px 0 0 150px;   
 }
-
+/*-----------------CONTACT SECTION----------*/
 #contact {
     display:grid;
     grid-template-columns:1fr;
@@ -179,16 +179,15 @@ p {
     padding-bottom:40px;
 }
 
-form p {
-    padding-top:30px;
+form {
+    display:block;
+    flex-direction:column;
     width:90%;
-    text-align:center;
 }
 
-form {
-    display:flex;
-    flex-flow:column;
-    align-items:center;
+form p {
+    padding-top:30px;
+    text-align:center;
 }
 
 form label {
@@ -209,7 +208,7 @@ input:focus {
 }
 
 .info > input {
-    width:390px;
+    width:350px;
     padding:10px;
     display:block;
     font-size:1em;
@@ -231,9 +230,8 @@ button {
     text-transform:uppercase;
     padding:5px 80px 5px 80px;
     margin-top:20px;
-
 }
-
+/*-------------FOOTER------------*/
 footer {
     padding-top:20px;
     padding-bottom:10px;
@@ -243,23 +241,17 @@ footer {
     text-transform:uppercase;
     clear:both;
 }
-
+/*--------------SCREEN SIZE 880PX---------*/
 @media screen and (min-width:880px){
     #wrapper {
         display:inline-grid;
-
         width:100%;
         grid-template-columns:1fr 1fr;
         margin:5px;
     }
 
-
-
-    figure {
-     
-    }
 }
-    
+/*-----------SCREEN SIZE 1300PX----------*/    
 @media screen and (min-width:1300px){
 
 }
