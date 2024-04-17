@@ -179,39 +179,35 @@ p {
     padding-bottom:40px;
 }
 
-form {
-    display:block;
-    flex-direction:column;
-    width:90%;
-}
-
-form p {
+#contact p {
     padding-top:30px;
+    padding-bottom:30px;
     text-align:center;
+    width:90%;
+    justify-self:center;
 }
 
-form label {
+form {
+    justify-self:center;
     text-transform:uppercase;
-}
-
-.info {
-    padding-top:30px;
-}
-
-.info > label {
-    margin-left:10px;
     font-size:1em;
+}
+
+form > label {
+    padding-top:20px;
+    margin-left:10px;
 }
 
 input:focus {
     outline:1px solid #007D7B;
 }
 
-.info > input {
+form > input {
     width:350px;
-    padding:10px;
+    padding:6px;
     display:block;
     font-size:1em;
+    margin-bottom:20px;
 }
 
 input::placeholder {
@@ -222,6 +218,7 @@ input::placeholder {
 }
 
 button {
+    margin-left:80px;
     background-color: #007D7B;
     color:#FFFFFF;
     border:none;
@@ -229,7 +226,6 @@ button {
     font-size:1em;
     text-transform:uppercase;
     padding:5px 80px 5px 80px;
-    margin-top:20px;
 }
 /*-------------FOOTER------------*/
 footer {
