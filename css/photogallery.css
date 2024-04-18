@@ -158,7 +158,7 @@ p {
     padding-top:10px;
 }
 
-#pictures figure {
+figure {
     justify-self:center;    
     padding-top:5px;
 }
@@ -282,6 +282,7 @@ input::placeholder {
 
 button {
     background-color: #007D7B;
+    color:#FFFFFF;
     border:none;
     border-radius:12px;
     font-size:1em;
