@@ -166,13 +166,21 @@ p {
 #pictures figcaption {
     text-transform:uppercase;
     color:#FFFFFF;
+    font-size:1em;    
+    display:block;
+    position:absolute;
 }
 
 .top figcaption  {
-    display:block;
-    font-size:1em;
-    position:absolute;
     margin: -270px 0 0 150px;   
+}
+
+.top-long figcaption {
+    margin: -270px 0 0 150px; 
+}
+
+.bottom figcaption {
+    margin: -270px 0 0 150px; 
 }
 /*-----------------CONTACT SECTION----------*/
 #contact {
@@ -196,12 +204,13 @@ p {
 form {
     justify-self:center;
     text-transform:uppercase;
-    font-size:1em;
+    
 }
 
 form > label {
     padding-top:20px;
     margin-left:10px;
+    font-size:1em;
 }
 
 input:focus {
@@ -230,7 +239,6 @@ input[type=submit] {
     border:none;
     border-radius:12px;
     font-size:1em;
-    
     text-transform:uppercase;
     padding:5px 80px 5px 80px;
     width:40vw;
@@ -244,6 +252,10 @@ footer {
     text-align:center;
     text-transform:uppercase;
     clear:both;
+}
+
+small {
+    font-size:1em;
 }
 /*--------------SCREEN SIZE 880PX---------*/
 @media screen and (min-width:880px){
