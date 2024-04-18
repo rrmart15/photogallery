@@ -46,6 +46,11 @@ table {
     border-spacing: 0;
 }
 /*END OF CSS RESET CODE - BEGIN STYLES BELOW*/
+* {
+    padding:0;
+    margin:0;
+}
+
 html {
     background-color:#000000;
 }
@@ -72,34 +77,35 @@ h1 {
 }
 
 nav {
-    width:100%;
-    background-color:#000000;
-}
-
-nav ul {
-    padding-left:50px;
-    padding-bottom:30px;
+    background-color:#000000; 
 }
 
 nav h2 {
     visibility:hidden;
 }
 
+nav ul {
+    padding-bottom:10px;
+    margin:0;
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
 nav li {
-    display:inline-flex;
+    display:inline-block;
+    height:50px;
 }
 
 nav a {
-    padding-left:10px;
-    padding-right:10px;
-    width:auto;
+    padding:10px;
+    display:block;
     background-color:#000000;
     color:#FFFFFF;
     text-decoration:none;
-    text-align:center;
     text-transform:uppercase;
-    font-weight:bold;
     font-size:1.5em;
+    font-weight:bold;
 }
 
 nav a:hover {
@@ -129,14 +135,14 @@ p {
 }
 
 #about h2 {
-    padding-top:20px;
+    margin-top:20px;
 }
 
 #about p {
     margin:10px;
 }
 /*---------------GALLERY SECTION-----------------------*/
-#gallery {
+#pictures {
     display:grid;
     grid-template-columns:1fr;
     width:100%;
@@ -152,12 +158,12 @@ p {
     padding-top:10px;
 }
 
-#gallery figure {
+#pictures figure {
     justify-self:center;    
     padding-top:5px;
 }
 
-#gallery figcaption {
+#pictures figcaption {
     text-transform:uppercase;
     color:#FFFFFF;
 }
@@ -203,7 +209,7 @@ input:focus {
 }
 
 form > input {
-    width:350px;
+    width:80vw;
     padding:6px;
     display:block;
     font-size:1em;
@@ -217,15 +223,17 @@ input::placeholder {
     font-weight:bold;
 }
 
-button {
-    margin-left:80px;
+input[type=submit] {
+    margin:auto;
     background-color: #007D7B;
     color:#FFFFFF;
     border:none;
     border-radius:12px;
     font-size:1em;
+    
     text-transform:uppercase;
     padding:5px 80px 5px 80px;
+    width:40vw;
 }
 /*-------------FOOTER------------*/
 footer {
@@ -239,15 +247,37 @@ footer {
 }
 /*--------------SCREEN SIZE 880PX---------*/
 @media screen and (min-width:880px){
-    #wrapper {
-        display:inline-grid;
-        width:100%;
+    h1 {
+        text-align:left;
+    }
+    
+    #pictures {
+        display:grid;
         grid-template-columns:1fr 1fr;
         margin:5px;
     }
 
+    #picture img {
+        width:100%;
+        height:100%;
+        object-position:contain;
+    }
 }
 /*-----------SCREEN SIZE 1300PX----------*/    
 @media screen and (min-width:1300px){
+    nav ul {
+        justify-content:right;
+    }
 
+    #pictures {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        margin:5px;
+    }
+
+    #picture img {
+        width:100%;
+        height:100%;
+        object-position:contain;
+    }
 }
