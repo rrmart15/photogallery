@@ -80,11 +80,11 @@ nav {
     background-color:#000000; 
 }
 
-nav h2 {
+nav > h2 {
     visibility:hidden;
 }
 
-nav ul {
+nav > ul {
     padding-bottom:10px;
     margin:0;
     list-style:none;
@@ -165,22 +165,70 @@ p {
 
 #pictures figcaption {
     text-transform:uppercase;
-    color:#FFFFFF;
     font-size:1em;    
     display:block;
     position:absolute;
+    font-weight:bold;
 }
 
-.top figcaption  {
-    margin: -270px 0 0 150px;   
+#chile figcaption {
+    margin: -32px 0 0 170px;
+    color:#FFFFFF;
 }
 
-.top-long figcaption {
-    margin: -270px 0 0 150px; 
+#guatemala figcaption {
+    margin: -265px 0 0 140px;
+    color:#FFFFFF; 
 }
 
-.bottom figcaption {
-    margin: -270px 0 0 150px; 
+#hawaii figcaption {
+    margin: -32px 0 0 170px;
+    color:#FFFFFF;
+}
+
+#iran figcaption {
+    margin: -620px 0 0 165px; 
+    color:#000000;
+}
+
+#ireland figcaption {
+    margin: -620px 0 0 165px; 
+    color:#000000;
+}
+
+#italy figcaption {
+    margin: -28px 0 0 140px; 
+    color:#000000;
+}
+
+#moab figcaption {
+    margin: -32px 0 0 130px;
+    color:#FFFFFF; 
+}
+
+#rocky figcaption {
+    margin: -265px 0 0 105px;
+    color:#000000; 
+}
+
+#swiss figcaption {
+    margin: -265px 0 0 140px;
+    color:#000000; 
+}
+
+#uk figcaption {
+    margin: -265px 0 0 180px;
+    color:#000000; 
+}
+
+#usa figcaption {
+    margin: -265px 0 0 170px;
+    color:#000000; 
+}
+
+#wyoming figcaption {
+    margin: -265px 0 0 140px;
+    color:#FFFFFF; 
 }
 /*-----------------CONTACT SECTION----------*/
 #contact {
@@ -191,6 +239,7 @@ p {
     color:#FFFFFF;
     padding-top:15px;
     padding-bottom:40px;
+    
 }
 
 #contact p {
@@ -203,8 +252,7 @@ p {
 
 form {
     justify-self:center;
-    text-transform:uppercase;
-    
+    text-transform:uppercase;  
 }
 
 form > label {
@@ -213,8 +261,8 @@ form > label {
     font-size:1em;
 }
 
-input:focus {
-    outline:1px solid #007D7B;
+input[type="text"]:focus {
+    outline:2px solid #007D7B;
 }
 
 form > input {
@@ -232,16 +280,20 @@ input::placeholder {
     font-weight:bold;
 }
 
-input[type=submit] {
-    margin:auto;
+button {
     background-color: #007D7B;
-    color:#FFFFFF;
     border:none;
     border-radius:12px;
     font-size:1em;
     text-transform:uppercase;
-    padding:5px 80px 5px 80px;
+    padding:05px 80px 5px 70px;
     width:40vw;
+    margin-left:100px;
+}
+
+button > a {
+    text-decoration:none;
+    color:#FFFFFF;
 }
 /*-------------FOOTER------------*/
 footer {
@@ -272,7 +324,11 @@ small {
     #picture img {
         width:100%;
         height:100%;
-        object-position:contain;
+        object-fit:contain;
+    }
+
+    button {
+        margin-left:190px;
     }
 }
 /*-----------SCREEN SIZE 1300PX----------*/    
@@ -290,6 +346,11 @@ small {
     #picture img {
         width:100%;
         height:100%;
-        object-position:contain;
+        object-fit:contain;
     }
+
+    button {
+        margin-left:280px;
+    }
+
 }
